@@ -73,24 +73,24 @@ var carType = ["Toyota","Lamborghini","Tesla"]
 var color = ["red","blue","black"]
 var num = 17
 function car(a,b){
-if(color[1] == "blue"){
-	if(carType[0] == "Toyota"){
+if(a == "blue"){
+	if(b == "Toyota"){
 		console.log("We have " + num + " " + color[1] + " " + carType[0])
 	}else{
-		console.log("We don't have any " + color[1] + " " + carType[0] + " in stock")
+		console.log("We don't have any " + color[1] + " " + b + " in stock")
 	}	
-}else if(color[0] == "red"){
-	if(carType[1] == "Lamborghini"){
+}else if(a == "red"){
+    if(b == "Lamborghini"){
 		console.log("We have " + num + " " + color[0] + " " + carType[1])
 	}else{
-		console.log("We don't have any " + color[0] + " " + carType[1] + " in stock")
+		console.log("We don't have any " + color[0] + " " + b + " in stock")
     }
-}else if(color[2] == "black"){
-	if(carType[2] == "Tesla"){
+}else if(a == "black"){
+	if(b == "Tesla"){
 		console.log("We have " + num + " " + color[2] + " " + carType[2])
 	}else{
-		console.log("We don't have any " + color[2] + " " + carType[2] + " in stock")
+		console.log("We don't have any " + color[2] + " " + b + " in stock")
 	}
 }
 }
-car("blue","Toyota")
+car("black","Toyota")
